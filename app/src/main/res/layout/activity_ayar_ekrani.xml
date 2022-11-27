@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarEkrani">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#86A0AC"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_ayar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Üst Limit "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.17" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned_ayar_value"
+                android:layout_width="165dp"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.377" />
+
+            <Button
+                android:id="@+id/btn_ayar_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintEnd_toStartOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextNumberSigned_ayar_value" />
+
+            <Button
+                android:id="@+id/btn_ayar_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintTop_toTopOf="@+id/editTextNumberSigned_ayar_value" />
+
+            <CheckBox
+                android:id="@+id/chb_ayar_vibrate"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Titreşim"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextNumberSigned_ayar_value"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned_ayar_value" />
+
+            <CheckBox
+                android:id="@+id/chb_ayar_sound"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sesli Uyarı"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/chb_ayar_vibrate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/chb_ayar_vibrate"
+                app:layout_constraintTop_toBottomOf="@+id/chb_ayar_vibrate"
+                app:layout_constraintVertical_bias="0.178" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/down_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/editTextNumberSigned_ayar_value2"
+                android:layout_width="165dp"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.377" />
+
+            <TextView
+                android:id="@+id/txt_ayar_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt Limit "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.17" />
+
+            <Button
+                android:id="@+id/btn_ayar_minus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintEnd_toStartOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextNumberSigned_ayar_value2" />
+
+            <Button
+                android:id="@+id/btn_ayar_plus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintTop_toTopOf="@+id/editTextNumberSigned_ayar_value2" />
+
+            <CheckBox
+                android:id="@+id/chb_ayar_vibrate2"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Titreşim"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintStart_toStartOf="@+id/editTextNumberSigned_ayar_value2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned_ayar_value2" />
+
+            <CheckBox
+                android:id="@+id/chb_ayar_sound2"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Sesli Uyarı"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/chb_ayar_vibrate2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/chb_ayar_vibrate2"
+                app:layout_constraintTop_toBottomOf="@+id/chb_ayar_vibrate2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
